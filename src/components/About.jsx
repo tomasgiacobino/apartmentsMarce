@@ -14,8 +14,8 @@ const About = () => {
           Aca podes ver las comodidades que brindan nuestras habitaciones.
         </h1>
         <div className="about-buttons-container">
-            <button className="secondary-button">Learn More</button>
-            <button className="watch-video-button"><BsFillPlayCircleFill/>Watch video</button>
+            <button className="btnVerMas">Ver Más</button>
+            <button className="btnVideo"><BsFillPlayCircleFill/>Ver Video</button>
         </div>
       </div>
     </div>

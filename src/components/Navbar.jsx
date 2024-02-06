@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
@@ -11,6 +10,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import CallIcon from '@mui/icons-material/Call';
+import Logo from '../Assets/logo.png';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -52,12 +52,19 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div>
-        <h2 className="txtTitulo">Terra Maria Aparments</h2>
+      <div className="nav-logo-container">
+        <img
+          src={Logo}
+          style={{
+            position: "absolute",
+            width: "15rem",
+            top: -24,
+            left: 100,
+            padding: "10px",
+          }}
+          alt="Terra Maria"
+        />
       </div>
-      {/* {<div className="nav-logo-container">
-        <img src={Logo} alt="" />
-      </div>} */}
       <div className="navbar-links-container">
         <button className="btnNavBar" onClick = {scrollToHome}>Inicio</button>
         <button className="btnNavBar" onClick={scrollToAbout}>Departametos</button>

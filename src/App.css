@@ -45,10 +45,6 @@ nav {
   font-weight: 600;
 }
 
-.txtTitulo{
-  color:#3B2315
-}
-
 .btnContactame {
   padding: 0.9rem 1.75rem;
   background-color: white;
@@ -72,7 +68,7 @@ nav {
   cursor: pointer;
   font-weight: 600;
   transition: 0.2s;
-  color:#3B2315;
+  color: #3B2315;
 }
 
 .navbar-cart-icon {
@@ -128,9 +124,9 @@ nav {
   margin: 1.5rem 0rem;
 }
 
-.secondary-button {
+.btnVerMas {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #FFCC70;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -144,13 +140,13 @@ nav {
   justify-content: center;
 }
 
-.secondary-button svg {
+.btnVerMas svg {
   margin-left: 0.75rem;
   font-size: 1.5rem;
 }
 
-.secondary-button:hover {
-  background-color: #e48f0f;
+.btnVerMas:hover {
+  background-color: #3B2315;
 }
 
 .about-bannerImage-container{
@@ -198,7 +194,7 @@ nav {
   display: flex;
 }
 
-.watch-video-button {
+.btnVideo {
   margin-left: 2rem;
   background-color: transparent;
   outline: none;
@@ -214,7 +210,7 @@ nav {
   justify-content: center;
 }
 
-.watch-video-button svg {
+.btnVideo svg {
   font-size: 3rem;
   margin-right: 1rem;
 }
@@ -405,7 +401,7 @@ nav {
     margin-top: 4rem;
   }
 
-  .secondary-button {
+  .btnVerMas {
     font-size: 1rem;
     padding: 0.8rem 2rem;
     cursor: pointer;
@@ -424,13 +420,13 @@ nav {
     text-align: center;
   }
 
-  .watch-video-button {
+  .btnVideo {
     margin-left: 0rem !important;
     margin-top: 1rem;
     font-size: 1rem !important;
   }
 
-  .watch-video-button svg {
+  .btnVideo svg {
     margin-right: 0.5rem !important;
   }
 
