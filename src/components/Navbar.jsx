@@ -52,7 +52,7 @@ const Navbar = () => {
             position: "absolute",
             width: "15rem",
             top: -24,
-            left: 0,
+            left: 80,
             padding: "10px",
           }}
           alt="Terra Maria"
