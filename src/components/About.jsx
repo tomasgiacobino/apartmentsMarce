@@ -1,12 +1,13 @@
 import React from "react";
 import { BsFillPlayCircleFill } from "react-icons/bs";
+import BannerBackground from "../Assets/home-banner-background2.png";
 
 const About = () => {
   return (
-    <div className="about-section-container">
-      <div className="about-background-image-container">
-        <img src={""} alt="" />
-      </div>
+    <div id="about" className="divAbout">
+      <div className="about-bannerImage-container">
+          <img src={BannerBackground} alt="banner-background" />
+        </div>
       <div className="about-section-text-container">
         <p className="primary-subheading">Departamentos</p>
         <h1 className="primary-heading">

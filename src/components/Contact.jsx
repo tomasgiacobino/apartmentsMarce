@@ -1,13 +1,21 @@
 import React from 'react'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Contact = () => {
   return (
-    <div className="contact-page-wrapper">
-      <h1 className="primary-heading">Have Question In Mind?</h1>
-      <h1 className="primary-heading">Let Us Help You</h1>
-      <div className="contact-form-container">
-        <input type="text" placeholder="yourmail@gmail.com" />
-        <button className="secondary-button">Submit</button>
+    <div id='contact' className='divContacto'>
+      <p className='txtContactame'>Contactame</p>
+      <div className='divContactos'>
+          <div className='contactoWpp'>
+              <p>Via whatsapp</p>
+              <a className='iconoWpp' href='https://wa.me/3874069341?text=Hola me pongo en contacto por los apartments' target='_blank'>
+                <WhatsAppIcon></WhatsAppIcon>
+              </a>
+          </div>
+          <div className='contactoMail'>
+              <p>Via Mail</p>
+              <p>logo de Mail</p>
+          </div>
       </div>
     </div>
   )
