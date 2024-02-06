@@ -12,8 +12,6 @@ function App() {
     <div className="App">
       <Home />
       <About />
-      <Work />
-      <Testimonials />
       <Contact />
       <Footer />
       <WhatsappShareButton
