@@ -13,7 +13,7 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Nuestros Aparts
+            Nuestros Aparts - prueba de commit y pr con alan
           </h1>
           <p className="primary-text">
             4 Apartments para relajarte y descansar en tu estadia en la ciudad de Salta.
