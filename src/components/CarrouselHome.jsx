@@ -103,6 +103,9 @@ function SwipeableTextMobileStepper() {
           left: 0,
           right: 0,
           bgcolor: "transparent",
+          "& .MuiMobileStepper-dot": {
+            backgroundColor: "#bc5e1c",
+          },
         }}
         activeStep={activeStep}
         nextButton={
@@ -110,6 +113,11 @@ function SwipeableTextMobileStepper() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
+            sx={{
+              "&.MuiButton-root": {
+                color: "#bc5e1c",
+              },
+            }}
           >
             {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
@@ -119,7 +127,16 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          <Button
+            size="small"
+            onClick={handleBack}
+            disabled={activeStep === 0}
+            sx={{
+              "&.MuiButton-root": {
+                color: "#bc5e1c",
+              },
+            }}
+          >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
