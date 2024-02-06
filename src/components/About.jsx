@@ -8,7 +8,7 @@ const About = () => {
       <div className="about-bannerImage-container">
           <img src={BannerBackground} alt="banner-background" />
         </div>
-      <div className="about-section-text-container">
+      <div className="aboutTextos">
         <p className="primary-subheading">Departamentos</p>
         <h1 className="primary-heading">
           Aca podes ver las comodidades que brindan nuestras habitaciones.
