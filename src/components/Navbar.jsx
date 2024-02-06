@@ -9,7 +9,7 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
+import Logo from "../Assets/logo.png";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -45,12 +45,19 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div>
-        <h2>Terra Maria</h2>
+      <div className="nav-logo-container">
+        <img
+          src={Logo}
+          style={{
+            position: "absolute",
+            width: "15rem",
+            top: -24,
+            left: 0,
+            padding: "10px",
+          }}
+          alt="Terra Maria"
+        />
       </div>
-      {/* <div className="nav-logo-container">
-        <img src={Logo} alt="" />
-      </div> */}
       <div className="navbar-links-container">
         <a href="#">Inicio</a>
         <a href="#">Departametos</a>
