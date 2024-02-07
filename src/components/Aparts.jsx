@@ -1,10 +1,24 @@
-import React from 'react';
-import ApartsImages from './ApartsImages';
+import React, { useEffect, useState } from "react";
+import ApartsImages from "./ApartsImages";
 
 const Apart = ({ apartmentsData }) => {
+  const [apartments, setApartments] = useState([]);
+
+  useEffect(() => {
+    const updatedApartments = apartmentsData.map((apartment) => {
+      const imagesArray = Object.values(apartment.images);
+      return {
+        ...apartment,
+        images: imagesArray,
+      };
+    });
+
+    setApartments(updatedApartments);
+  }, [apartmentsData]);
+
   return (
     <div className="apart-container">
-      {apartmentsData.map((apartment) => (
+      {apartments.map((apartment) => (
         <div key={apartment.id} className="apartment">
           <div className="text-container">
             <h1 className="apart-title">{apartment.title}</h1>
