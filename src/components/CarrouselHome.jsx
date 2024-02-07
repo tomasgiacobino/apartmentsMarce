@@ -9,9 +9,9 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import ImgCarrousel1 from "../Assets/images/aparts/apart1.jpeg";
-import ImgCarrousel2 from "../Assets/images/mesita4.jpeg";
-import ImgCarrousel3 from "../Assets/images/mesita2.jpeg";
+import ImgCarrousel1 from "../Assets/images/Cocina/cocina1.jpeg";
+import ImgCarrousel2 from "../Assets/images/Cocina/cocina2.jpeg";
+import ImgCarrousel3 from "../Assets/images/Cocina/cocina3.jpeg";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 

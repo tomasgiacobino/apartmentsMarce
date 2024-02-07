@@ -90,9 +90,63 @@ nav {
   padding-top: 5rem;
 }
 
+.apart-banner-container{
+  position: relative;
+  display: flex;
+  padding-top: 15rem;
+}
+
 .home-bannerImage-container {
   position: absolute;
   top: -100px;
+  right: -170px;
+  z-index: -2;
+  max-width: 700px;
+}
+
+
+.apart-container {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección de flexión a columna */
+  gap: 20px; /* Espacio entre los apartamentos */
+  padding: 20px;
+}
+
+.image-gallery {
+  width: 100%; /* Ajustamos el ancho para que ocupe toda la línea */
+}
+
+.text-container {
+  width: 100%; /* Ajustamos el ancho para que ocupe toda la línea */
+}
+
+.image-container,
+.image-gallery {
+  flex: 1;
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.apart-title {
+  margin-bottom: 10px;
+}
+
+.normal-order {
+  flex-direction: row;
+}
+
+.reverse-order {
+  flex-direction: row-reverse;
+}
+
+.apart-bannerImage-container{
+  position: absolute;
+  top: 200px;
   right: -170px;
   z-index: -2;
   max-width: 700px;
@@ -298,7 +352,7 @@ nav {
 }
 
 .footer-logo-container {
-  max-width: 110px;
+  max-width: 200px;
 }
 
 .footer-icons {
