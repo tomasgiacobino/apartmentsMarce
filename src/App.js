@@ -7,48 +7,52 @@ import { WhatsappIcon, WhatsappShareButton } from "react-share";
 
 const importAllC1 = (r) => r.keys().map(r);
 const imagesC1 = importAllC1(
-  require.context("./Assets/images/cuarto1/", false, /\.(jpeg)$/)
+  require.context("./Assets/images/cuarto1/", false, /\.(jpeg|webp)$/)
 );
 
 const importAllC2 = (r) => r.keys().map(r);
 const imagesC2 = importAllC2(
-  require.context("./Assets/images/cuarto2/", false, /\.(jpeg)$/)
+  require.context("./Assets/images/cuarto2/", false, /\.(jpeg|webp)$/)
 );
 
 const importAllC3 = (r) => r.keys().map(r);
 const imagesC3 = importAllC3(
-  require.context("./Assets/images/cuarto3/", false, /\.(jpeg)$/)
+  require.context("./Assets/images/cuarto3/", false, /\.(jpeg|webp)$/)
 );
 
 const importAllC4 = (r) => r.keys().map(r);
 const imagesC4 = importAllC4(
-  require.context("./Assets/images/cuarto4/", false, /\.(jpeg)$/)
+  require.context("./Assets/images/cuarto4/", false, /\.(jpeg|webp)$/)
 );
 
 function App() {
   const apartamentos = [
     {
       id: 1,
-      title: "Apart 1",
-      description: ["1 dormitorio", "3 huéspedes", "1 baño"],
+      title: "Terra María Apart 1",
+      description: ["3 huéspedes", "1 dormitorio", "2 camas" ,"1 baño"],
+      incluye: ["Wifi", "Zona de trabajo", "Se permiten mascostas", "TV HD 34''", "Aire acondicionado"],
       images: [imagesC1],
     },
     {
       id: 2,
-      title: "Apart 2",
-      description: ["2 Camas", "Para 4 personas", "Wifi incluido"],
+      title: "Terra María Apart 2",
+      description: ["3 huéspedes", "1 dormitorio", "2 camas", "1 baño"],
+      incluye: ["Wifi", "TV", "Aire acondicionado"," Secador de pelo", "Estacionamiento pago"],
       images: [imagesC2],
     },
     {
       id: 3,
-      title: "Apart 3",
+      title: "Terra María Apart 3",
       description: ["4 huéspedes", "1 dormitorio", "2 camas", "1 baño"],
+      incluye: ["Wifi", "Zona de trabajo", "TV", "Aire Acondicionado", "Secador de pelo"],
       images: [imagesC3],
     },
     {
-      id: 1,
-      title: "Apart 1",
-      description: ["2 Camas", "Para 4 personas", "Wifi incluido"],
+      id: 4,
+      title: "Terra María Apart 4",
+      description: ["2 huéspedes", "1 dormitorio", "1 cama" ,"1 baño"],
+      incluye: ["Wifi", "Zona de trabajo", "TV", "Aire acondicionado", "Heladera"],
       images: [imagesC4],
     },
   ];
