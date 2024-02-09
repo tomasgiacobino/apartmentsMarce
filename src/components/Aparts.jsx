@@ -5,11 +5,13 @@ const Apart = ({ apartmentsData }) => {
   const [apartments, setApartments] = useState([]);
 
   useEffect(() => {
-    const updatedApartments = apartmentsData.map((apartment) => {
+    const updatedApartments = apartmentsData.map((apartment, index) => {
       const imagesArray = Object.values(apartment.images);
       return {
         ...apartment,
         images: imagesArray,
+        // Agrega una propiedad alternante al objeto de apartamento
+        alternateStyle: index % 2 === 0 ? "normal" : "reverse"
       };
     });
 
@@ -19,7 +21,7 @@ const Apart = ({ apartmentsData }) => {
   return (
     <div className="apart-container">
       {apartments.map((apartment) => (
-        <div key={apartment.id} className="apartment">
+        <div key={apartment.id} id={`apartment-${apartment.id}`} className={`apartment ${apartment.alternateStyle}`}>
           <div className="text-container">
             <h1 className="apart-title">{apartment.title}</h1>
             <div className="apart-description">
