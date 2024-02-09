@@ -30,7 +30,7 @@ function App() {
     {
       id: 1,
       title: "Apart 1",
-      description: ["2 Camas", "Para 4 personas", "Wifi incluido"],
+      description: ["1 dormitorio", "3 huéspedes", "1 baño"],
       images: [imagesC1],
     },
     {
@@ -42,12 +42,12 @@ function App() {
     {
       id: 3,
       title: "Apart 3",
-      description: ["2 Camas", "Para 4 personas", "Wifi incluido"],
+      description: ["4 huéspedes", "1 dormitorio", "2 camas", "1 baño"],
       images: [imagesC3],
     },
     {
-      id: 4,
-      title: "Apart 4",
+      id: 1,
+      title: "Apart 1",
       description: ["2 Camas", "Para 4 personas", "Wifi incluido"],
       images: [imagesC4],
     },

@@ -9,7 +9,7 @@ const ApartsImages = ({ images }) => {
       <ImageList variant="masonry" cols={3} gap={8}>
         {images[0].map((image, index) => (
           <ImageListItem key={index}>
-            <img src={image} alt={`Image ${index}`} loading="lazy" />
+              <img  src={image} alt={`Image ${index}`} loading="lazy" />
           </ImageListItem>
         ))}
       </ImageList>
