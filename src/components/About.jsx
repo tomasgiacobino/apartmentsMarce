@@ -17,7 +17,7 @@ const About = forwardRef((props, ref) => {
         <img src={BannerBackground} alt="banner-background" />
       </div>
       <div className="aboutTextos">
-        <p className="primary-subheading">Departamentos</p>
+        <p className="primary-subheading">DepartamentosSSssSS</p>
         <h1 className="primary-heading">
           Aca podes ver las comodidades que brindan nuestras habitaciones.
         </h1>
