@@ -1,4 +1,5 @@
 import "./App.css";
+// import './estilos.css'
 import About from "./components/About";
 import Aparts from "./components/Aparts";
 import Footer from "./components/Footer";

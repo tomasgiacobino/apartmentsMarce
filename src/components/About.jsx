@@ -16,11 +16,14 @@ const About = forwardRef((props, ref) => {
       <div className="about-bannerImage-container">
         <img src={BannerBackground} alt="banner-background" />
       </div>
-      <div className="aboutTextos">
-        <p className="primary-subheading">Departamentos</p>
-        <h1 className="primary-heading">
-          Aca podes ver las comodidades que brindan nuestras habitaciones.
-        </h1>
+      <div className="containerAbout">
+        <div className="textosAbout">
+          <p className="primary-subheading">Espacios comunes</p>
+          <div className="primary-heading">
+            <p className="salaEstar">Sala de estar con desayunador</p>
+            <p>Cocina</p>
+          </div>
+        </div>
         <div className="about-buttons-container">
           {/* Botón para desplazarse a Apart1 */}
           <button onClick={() => handleScrollToApartment(1)} className="btnVerMas">
