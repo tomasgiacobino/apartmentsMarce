@@ -191,6 +191,7 @@ nav {
 
 .image-gallery {
   flex: 1;
+  width: 100%;
 }
 
 /* Agrega estilos adicionales según sea necesario */
@@ -204,9 +205,6 @@ nav {
   padding: 20px;
 }
 
-.image-gallery {
-  width: 100%; /* Ajustamos el ancho para que ocupe toda la línea */
-}
 
 .text-container {
   width: 100%; /* Ajustamos el ancho para que ocupe toda la línea */
@@ -256,11 +254,7 @@ nav {
   align-items: flex-start;
 }
 
-.primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
-  color:#3B2315;
-  max-width: 600px;
-}
+
 
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
@@ -302,12 +296,7 @@ nav {
   max-width: 700px;
 }
 
-.divAbout {
-  margin-top: 8rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+
 
 
 .about-background-image-container {
@@ -321,13 +310,31 @@ nav {
   margin-right: 1rem;
 }
 
-.aboutTextos {
+.divAbout {
+  margin-top: 8rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.containerAbout {
   padding-top: 5rem;
+  padding-bottom: 15rem;
   flex: 1;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: flex;
+}
+
+.textosAbout{
+  display: flex;
   flex-direction: column;
+  width: 60rem;
+}
+
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color:#3B2315;
 }
 
 .primary-subheading {
@@ -337,10 +344,10 @@ nav {
 }
 
 .about-buttons-container {
-  margin-top: 2rem;
   display: flex;
+  flex-direction: column;
   width: auto;
-  gap: 10px;
+  gap: 3rem;
 }
 
 .btnVideo {
@@ -481,15 +488,111 @@ nav {
     max-width: 450px;
   }
 
-  .home-banner-container,
+  .home-banner-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .divAbout {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
+
+  .containerAbout{
+    display: flex;
+    flex-direction: column;
+  }
   
   .divAbout {
     flex-direction: column;
+  }
+
+  .textosAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .primary-heading{
+      font-size: 25px;
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .apartment{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  .text-container{
+    font-size: 25px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+
+  .descripcionIncluye{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #apartment-1{
+    .apart-description{
+      border-right: 0px solid white;
+      padding-right: 0em;
+      padding-bottom: 1em;
+      border-bottom: 2px solid #FFCC70;
+    }
+
+    .apart-incluye{
+      padding-top: 1em;
+    }
+  }
+
+  #apartment-2{
+    .apart-description{
+      border-right: 0px solid white;
+      padding-right: 0em;
+      padding-bottom: 1em;
+      border-bottom: 2px solid #3B2315;
+    }
+
+    .apart-incluye{
+      padding-top: 1em;
+    }
+  }
+
+  #apartment-3{
+    .apart-description{
+      border-right: 0px solid white;
+      padding-right: 0em;
+      padding-bottom: 1em;
+      border-bottom: 2px solid #FFCC70;
+    }
+
+    .apart-incluye{
+      padding-top: 1em;
+    }
+  }
+
+  #apartment-4{
+    .apart-description{
+      border-right: 0px solid white;
+      padding-right: 0em;
+      padding-bottom: 1em;
+      border-bottom: 2px solid #3B2315;
+    }
+
+    .apart-incluye{
+      padding-top: 1em;
+    }
+  }
+
+  .image-gallery{
+    width: 200px;
   }
 
   .home-image-section,
@@ -549,21 +652,6 @@ nav {
     margin-right: 0rem !important;
   }
  
-  /* .contact-form-container {
-    padding: 0.5rem !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem !important;
-  }
-  .contact-form-container input {
-    font-size: 1rem !important;
-    max-width: 100%;
-    padding: 0.5rem 1rem !important;
-    margin-bottom: 0.8rem !important;
-    text-align: center;
-  } */
-
   .footer-wrapper {
     flex-direction: column;
   }
