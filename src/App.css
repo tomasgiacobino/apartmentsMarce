@@ -333,7 +333,6 @@ nav {
 }
 
 
-
 .btnVerMas {
   padding: 1rem 2.5rem;
   background-color: #FFCC70;
@@ -690,6 +689,14 @@ nav {
   .App {
     max-width: 95vw;
   }
+}
+.content {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+
+.content.show {
+  opacity: 1;
 }
 @media (max-width: 600px) {
   .home-bannerImage-container,
