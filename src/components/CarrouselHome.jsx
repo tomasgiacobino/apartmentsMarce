@@ -9,9 +9,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import Entrada1 from "../Assets/images/Entrada/entradalejos.webp";
-import Entrada2 from "../Assets/images/Entrada/entradacerca.webp";
-import Entrada3 from "../Assets/images/Entrada/entradalejos1.webp";
-import Entrada4 from "../Assets/images/Entrada/entradacerca1.webp";
+import Entrada2 from "../Assets/images/Entrada/entradacerca1.webp";
 import Exterior1 from "../Assets/images/Entrada/exterior.webp";
 import Exterior2 from "../Assets/images/Entrada/exterior1.webp";
 
@@ -25,14 +23,6 @@ const images = [
   {
     label: 2,
     img: Entrada2,
-  },
-  {
-    label: 3,
-    img: Entrada3,
-  },
-  {
-    label: 4,
-    img: Entrada4,
   },
   {
     label: 5,
