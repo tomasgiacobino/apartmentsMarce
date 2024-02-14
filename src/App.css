@@ -188,6 +188,8 @@ nav {
     align-items: center;
     display: flex;
     gap: 10px;
+    justify-content: center;
+    max-width: 100%;
 
     .salaEstarIcon{
       font-size: 3rem;
@@ -413,7 +415,7 @@ nav {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width:1023px){
+@media screen and (min-width: 801px) and (max-width:1023px){
   /* SECCION HOME */
 
   .home-banner-container{
@@ -537,7 +539,7 @@ nav {
     color: #3B2315;
     text-align: center;
     max-width: 100%;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .primary-text {
@@ -581,14 +583,20 @@ nav {
 
     
     .txtEspaciosComunes{
-      font-size: 3.5rem;
+      font-size: 2.5rem;
     }
   }
 
   .divDescEspaciosComunes {
+    padding-top: 3rem;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
     justify-content: space-around;
+
+    .salaEstarIcon{
+      gap: 0px;
+    }
+
   }
 
   .iframe{
