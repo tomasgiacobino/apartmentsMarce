@@ -1,16 +1,19 @@
 import React from "react";
 import Navbar from "./Navbar";
-import BannerBackground from "../Assets/home-banner-background.png";
+import BannerBackground from "../Assets/fondo1.webp";
 import CarrouselHome from './CarrouselHome';
 
 const Home = () => {
   return (
     <div className="home-container">
+
       <Navbar />
+      
       <div id="home" className="home-banner-container">
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="banner-background" />
         </div>
+
         <div className="home-text-section">
           <h1 className="primary-heading">
             Nuestros Aparts
