@@ -11,10 +11,10 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./CarrouselDepto.css";
-import ImgCarrousel1 from "../Assets/images/Entrada/entrada2.jpeg";
-import ImgCarrousel2 from "../Assets/images/Entrada/entrada3.jpeg";
-import ImgCarrousel3 from "../Assets/images/Entrada/exterior.webp";
-import ImgCarrousel4 from "../Assets/images/Entrada/exterior2.webp";
+import ImgCarrousel1 from "../Assets/images/Entrada/entradacerca.webp";
+import ImgCarrousel2 from "../Assets/images/Patio/patio.webp";
+import ImgCarrousel3 from "../Assets/images/cuarto1/cama1.webp";
+import ImgCarrousel4 from "../Assets/images/cuarto3/camas2.webp";
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
