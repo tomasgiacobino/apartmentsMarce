@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import About from "./components/About";
-import Aparts from "./components/Aparts";
+import CarrouselDepto from "./components/CarrouselDepto";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Loader from "./components/Loader";
@@ -103,8 +103,7 @@ function App() {
         {" "}
         <Home />
         <About />
-        <Aparts apartmentsData={apartamentos} />
-        {/* <Contact /> */}
+        <CarrouselDepto />
         <Footer />
         <WhatsappShareButton
           url={window.location.href}

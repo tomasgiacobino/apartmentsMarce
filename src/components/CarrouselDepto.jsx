@@ -5,7 +5,6 @@ import { EffectCoverflow, Pagination } from "swiper/core";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Paper from "@mui/material/Paper";
-import BannerBackground from "../Assets/home-banner-background2.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -40,9 +39,7 @@ function App() {
           boxShadow:
             "0px 11px 15px -7px rgb(255 204 112), 0px 24px 38px 3px rgb(255 204 112), 0px 9px 46px 8px rgb(255 204 112)",
         }}
-      >
-        asd
-      </Paper>
+      ></Paper>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
