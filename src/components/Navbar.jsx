@@ -54,6 +54,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-logo-container">
         <img
+        className="logoTerra"
           src={Logo}
           style={{
             position: "absolute",
