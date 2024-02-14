@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ApartsImages = ({ images }) => {
   return (
@@ -9,7 +10,14 @@ const ApartsImages = ({ images }) => {
       <ImageList variant="masonry" cols={3} gap={8}>
         {images[0].map((image, index) => (
           <ImageListItem key={index}>
-              <img  src={image} alt={`Image ${index}`} loading="lazy" />
+            <LazyLoadImage
+              key={index}
+              src={image}
+              alt={`Image Alt-${index}`}
+              className="img-lazy"
+              placeholderSrc={"placeholder"}
+              effect="blur"
+            />
           </ImageListItem>
         ))}
       </ImageList>
