@@ -5,7 +5,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 const ApartsImages = ({ images }) => {
   return (
-    <Box sx={{ width: "100%", height: 450, overflowY: "scroll" }}>
+    <Box sx={{ width: "100%", height: 450, overflowY: "hidden" }}>
       <ImageList variant="masonry" cols={3} gap={8}>
         {images[0].map((image, index) => (
           <ImageListItem key={index}>

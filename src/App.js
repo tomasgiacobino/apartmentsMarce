@@ -63,7 +63,6 @@ function App() {
       <Home />
       <About />
       <Aparts apartmentsData={apartamentos} />
-      {/* <Contact /> */}
       <Footer />
       <WhatsappShareButton
         url={window.location.href}
