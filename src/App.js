@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Loader from "./components/Loader";
 import { WhatsappIcon, WhatsappShareButton } from "react-share";
+import Apartments from "./components/Apartments";
 
 const importAllC1 = (r) => r.keys().map(r);
 const imagesC1 = importAllC1(
@@ -100,10 +101,9 @@ function App() {
   return (
     <div className="App">
       <div className={`content ${showContent ? "show" : ""}`}>
-        {" "}
         <Home />
         <About />
-        <CarrouselDepto />
+        <Apartments apartments={apartamentos} />
         <Footer />
         <WhatsappShareButton
           url={window.location.href}

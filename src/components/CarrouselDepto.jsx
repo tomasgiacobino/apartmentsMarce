@@ -5,18 +5,15 @@ import { EffectCoverflow, Pagination } from "swiper/core";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Paper from "@mui/material/Paper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./CarrouselDepto.css";
-import ImgCarrousel1 from "../Assets/images/Entrada/entradacerca.webp";
-import ImgCarrousel2 from "../Assets/images/Patio/patio.webp";
-import ImgCarrousel3 from "../Assets/images/cuarto1/cama1.webp";
-import ImgCarrousel4 from "../Assets/images/cuarto3/camas2.webp";
 
-function App() {
+function CarrouselDepto({ apartment }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -39,7 +36,12 @@ function App() {
           boxShadow:
             "0px 11px 15px -7px rgb(255 204 112), 0px 24px 38px 3px rgb(255 204 112), 0px 9px 46px 8px rgb(255 204 112)",
         }}
-      ></Paper>
+      >
+        <h2>Id: {apartment.id}</h2>
+        <h3>Title: {apartment.title}</h3>
+        <p>Description: {apartment.description.join(", ")}</p>
+        <p>Incluye: {apartment.incluye.join(", ")}</p>
+      </Paper>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -57,27 +59,11 @@ function App() {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide onClick={() => openModal(ImgCarrousel1)}>
-          <img src={ImgCarrousel1} />
-        </SwiperSlide>
-        <SwiperSlide onClick={() => openModal(ImgCarrousel2)}>
-          <img src={ImgCarrousel2} />
-        </SwiperSlide>
-        <SwiperSlide onClick={() => openModal(ImgCarrousel3)}>
-          <img src={ImgCarrousel3} />
-        </SwiperSlide>
-        <SwiperSlide onClick={() => openModal(ImgCarrousel4)}>
-          <img src={ImgCarrousel4} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
+        {apartment.images[0].map((image, index) => (
+          <SwiperSlide onClick={() => openModal(image)} key={index}>
+            <LazyLoadImage alt={`Slide ${index}`} effect="blur" src={image} />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <Modal
         isOpen={modalIsOpen}
@@ -126,4 +112,4 @@ function App() {
   );
 }
 
-export default App;
+export default CarrouselDepto;
