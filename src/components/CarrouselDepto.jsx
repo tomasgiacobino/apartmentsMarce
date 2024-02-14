@@ -5,16 +5,13 @@ import { EffectCoverflow, Pagination } from "swiper/core";
 import Modal from "react-modal";
 import CloseIcon from "@mui/icons-material/Close";
 import Paper from "@mui/material/Paper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./CarrouselDepto.css";
-import ImgCarrousel1 from "../Assets/images/Entrada/entradacerca.webp";
-import ImgCarrousel2 from "../Assets/images/Patio/patio.webp";
-import ImgCarrousel3 from "../Assets/images/cuarto1/cama1.webp";
-import ImgCarrousel4 from "../Assets/images/cuarto3/camas2.webp";
 
 function CarrouselDepto({ apartment }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -64,7 +61,7 @@ function CarrouselDepto({ apartment }) {
       >
         {apartment.images[0].map((image, index) => (
           <SwiperSlide onClick={() => openModal(image)} key={index}>
-            <img src={image} alt={`Slide ${index}`} />
+            <LazyLoadImage alt={`Slide ${index}`} effect="blur" src={image} />
           </SwiperSlide>
         ))}
       </Swiper>
