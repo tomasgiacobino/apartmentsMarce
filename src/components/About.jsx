@@ -1,8 +1,7 @@
-import React, { forwardRef } from "react";
+
 import BannerBackground from "../Assets/home-banner-background2.png";
 import CarrouselAbout from './CarrouselAbout';
 import CountertopsIcon from '@mui/icons-material/Countertops';
-import WeekendIcon from '@mui/icons-material/Weekend';
 import BakeryDiningIcon from '@mui/icons-material/BakeryDining';
 
 const About = () => {
@@ -20,9 +19,9 @@ const About = () => {
             <p className="salaEstar"><BakeryDiningIcon className="salaEstarIcon" /> Sala de estar con desayunador</p>
             <p className="cocina"> <CountertopsIcon className="cocinaIcon" /> Cocina</p>
           </div>
-          <div class="apiMaps">
-            <div class="mapContainer">
-              <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d843.578345941893!2d-65.40601436923932!3d-24.788568054250007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3bd4bc6b6eb%3A0x6d72340b1e7ba947!2sVicente%20L%C3%B3pez%2C%20Salta!5e0!3m2!1ses!2sar!4v1707858712428!5m2!1ses!2sar" height="100%"></iframe>
+          <div className="apiMaps">
+            <div className="mapContainer">
+              <iframe className="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d843.578345941893!2d-65.40601436923932!3d-24.788568054250007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3bd4bc6b6eb%3A0x6d72340b1e7ba947!2sVicente%20L%C3%B3pez%2C%20Salta!5e0!3m2!1ses!2sar!4v1707858712428!5m2!1ses!2sar"></iframe>
             </div>
           </div>
 
