@@ -16,7 +16,7 @@ import ImgCarrousel2 from "../Assets/images/Patio/patio.webp";
 import ImgCarrousel3 from "../Assets/images/cuarto1/cama1.webp";
 import ImgCarrousel4 from "../Assets/images/cuarto3/camas2.webp";
 
-function App() {
+function CarrouselDepto({ apartment }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -39,7 +39,12 @@ function App() {
           boxShadow:
             "0px 11px 15px -7px rgb(255 204 112), 0px 24px 38px 3px rgb(255 204 112), 0px 9px 46px 8px rgb(255 204 112)",
         }}
-      ></Paper>
+      >
+        <h2>Id: {apartment.id}</h2>
+        <h3>Title: {apartment.title}</h3>
+        <p>Description: {apartment.description.join(", ")}</p>
+        <p>Incluye: {apartment.incluye.join(", ")}</p>
+      </Paper>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -57,27 +62,11 @@ function App() {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide onClick={() => openModal(ImgCarrousel1)}>
-          <img src={ImgCarrousel1} />
-        </SwiperSlide>
-        <SwiperSlide onClick={() => openModal(ImgCarrousel2)}>
-          <img src={ImgCarrousel2} />
-        </SwiperSlide>
-        <SwiperSlide onClick={() => openModal(ImgCarrousel3)}>
-          <img src={ImgCarrousel3} />
-        </SwiperSlide>
-        <SwiperSlide onClick={() => openModal(ImgCarrousel4)}>
-          <img src={ImgCarrousel4} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
+        {apartment.images[0].map((image, index) => (
+          <SwiperSlide onClick={() => openModal(image)} key={index}>
+            <img src={image} alt={`Slide ${index}`} />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <Modal
         isOpen={modalIsOpen}
@@ -126,4 +115,4 @@ function App() {
   );
 }
 
-export default App;
+export default CarrouselDepto;
