@@ -86,7 +86,11 @@ function CarrouselDepto({ apartment }) {
               alt={`Slide ${index}`}
               effect="blur"
               src={image}
-              style={{ maxWidth: "100%", maxHeight: "70vh", objectFit: "contain" }} // Ajustar tamaño máximo y modo de ajuste de la imagen
+              style={{
+                maxWidth: "100%",
+                maxHeight: "50vh",
+                objectFit: "contain",
+              }} // Ajustar tamaño máximo y modo de ajuste de la imagen
             />
           </SwiperSlide>
         ))}
