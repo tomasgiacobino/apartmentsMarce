@@ -34,15 +34,14 @@ function CarrouselDepto({ apartment }) {
         sx={{
           width: " 65%",
           backgroundColor: "#BB5D1D",
-          boxShadow:
-            "none",
+          boxShadow: "6px 4px 5px rgba(10, 10, 10, 0.7)",
           margin: "1rem 1rem 1rem 0",
           padding: "1rem",
         }}
       >
         <div className="apartsCuadro">
           {/* <h2>Id: {apartment.id}</h2> */}
-          <h3>Title: {apartment.title}</h3>
+          <h3>{apartment.title}</h3>
           <div className="apartsDescripcion">
             <div>
               {apartment.description.map((desc, index) => (
