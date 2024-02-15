@@ -29,18 +29,37 @@ function CarrouselDepto({ apartment }) {
   return (
     <div className="atras">
       <Paper
+        div
         elevation={24}
         sx={{
           width: " 65%",
-          backgroundColor: "#ffcd728f",
+          backgroundColor: "#BB5D1D",
           boxShadow:
-            "0px 11px 15px -7px rgb(255 204 112), 0px 24px 38px 3px rgb(255 204 112), 0px 9px 46px 8px rgb(255 204 112)",
+            "none",
+          margin: "1rem 1rem 1rem 0",
+          padding: "1rem",
         }}
       >
-        <h2>Id: {apartment.id}</h2>
-        <h3>Title: {apartment.title}</h3>
-        <p>Description: {apartment.description.join(", ")}</p>
-        <p>Incluye: {apartment.incluye.join(", ")}</p>
+        <div className="apartsCuadro">
+          {/* <h2>Id: {apartment.id}</h2> */}
+          <h3>Title: {apartment.title}</h3>
+          <div className="apartsDescripcion">
+            <div>
+              {apartment.description.map((desc, index) => (
+                <p key={index}>
+                  {desc}
+                </p>
+              ))}
+            </div>
+            <div>
+              {apartment.incluye.map((item, index) => (
+                <p key={index}>
+                  {item}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
       </Paper>
       <Swiper
         effect={"coverflow"}
@@ -58,10 +77,17 @@ function CarrouselDepto({ apartment }) {
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
+        style={{ marginBottom: "10px" }}
       >
         {apartment.images[0].map((image, index) => (
           <SwiperSlide onClick={() => openModal(image)} key={index}>
-            <LazyLoadImage alt={`Slide ${index}`} effect="blur" src={image} />
+            {/* <LazyLoadImage alt={`Slide ${index}`} effect="blur" src={image} /> */}
+            <LazyLoadImage
+              alt={`Slide ${index}`}
+              effect="blur"
+              src={image}
+              style={{ maxWidth: "100%", maxHeight: "70vh", objectFit: "contain" }} // Ajustar tamaño máximo y modo de ajuste de la imagen
+            />
           </SwiperSlide>
         ))}
       </Swiper>

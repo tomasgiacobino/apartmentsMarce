@@ -168,6 +168,12 @@ nav {
   align-items: center;
 }
 
+.txtContamos{
+  font-size: 3rem;
+  text-align: center;
+  color:#BB5D1D ;
+}
+
 
 .txtEspaciosComunes{
   text-align: center;
